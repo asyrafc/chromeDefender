@@ -3,21 +3,27 @@
 	// this line will render the html code in the website useless as everything will be commented out
 	//var newWindow = window.open();
 	//newWindow.document.write(document.documentElement.innerHTML);
-	var i;
-	var arrayMaliciousContent;
-	for(i = 0; i < document.getElementsByTagName("p").length; i++)
+	//var i;
+	//var arrayMaliciousContent = [];
+	/*for(i = 0; i < document.getElementsByTagName("p").length; i++)
 	{
 		if(document.getElementsByTagName("p")[i].innerHTML.indexOf("Firebase") > -1)
 		{
-			arrayMaliciousContent[i] = document.getElementsByTagName("p")[i].innerHTML.indexOf("Firebase");
+			arrayMaliciousContent[i] = document.getElementsByTagName("p")[i].innerHTML;
 		}
 		else
 		{
 			//alert(document.getElementsByTagName("p")[i].innerHTML);
 		}
 	}
+	alert(arrayMaliciousContent.length);*/
 	
-	document.write('<!--');
+	for(var i = 0; i < document.getElementsByTagName("*").length; i++)
+	{
+		alert(document.getElementsByTagName("*")[i]);
+	}
+	
+	/*document.write('<!--');
 	document.write('-->');
 	// This line will overwrite the html code/content
 	document.write("<h1>Test</h1>");
@@ -25,7 +31,7 @@
 	for(var j = 0; j < arrayMaliciousContent.length; j++)
 	{
 		document.write(arrayMaliciousContent[j]);
-	}
+	}*/
 	
 	//newWindow.document.write("<p>You have been redirected as the website that you visited just now might contain malicious content</p>");
 	
